@@ -25,9 +25,6 @@ Run the following commands to validate things are rolling as they should.
 # Should use 11 as the specified version
 lando ssh -s defaults -c "psql -V" | grep "11"
 
-# Should use patch version when set by the user
-lando ssh -s patch -c "psql -V" | grep "11.1"
-
 # Should see the default database on healthcheck
 lando healthcheckdefaults | grep 'database'
 
