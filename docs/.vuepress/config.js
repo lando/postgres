@@ -26,12 +26,12 @@ module.exports = {
     sidebar: [
       {
         text: 'Getting Started',
-        link: '/index.md',
+        link: '/index.html',
       },
-      '/config.md',
+      '/config.html',
       {text: 'Examples', link: 'https://github.com/lando/postgres/tree/main/examples'},
       {text: 'Release Notes', link: 'https://github.com/lando/postgres/releases'},
-      '/development.md',
+      '/development.html',
     ],
   },
 };
