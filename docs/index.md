@@ -1,6 +1,7 @@
 ---
 title: Postgres Lando Plugin
 description: Add a highly configurable Postgres service to Lando for local development with all the power of Docker and Docker Compose.
+next: ./config.html
 ---
 
 # Postgres
