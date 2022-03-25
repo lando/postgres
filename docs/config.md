@@ -68,7 +68,7 @@ services:
 
 ## Setting custom credentials
 
-The postgres service user is set to `postgres` and the password is empty. It does not allow setting a custom user or password as this interferes with tooling commands and build steps. Lando needs to access the postgres super user to perform tooling commands. See [the Bitnami documentation](https://github.com/bitnami/bitnami-docker-postgresql#creating-a-database-user-on-first-run) for more information.
+The postgres service user is set to `postgres` and the password is empty. It does not allow setting a custom user or password as this interferes with tooling commands and build steps. Lando needs to access the postgres super user to perform tooling commands. See [the Bitnami documentation](https://github.com/bitnami/bitnami-docker-postgresql) for more information.
 
 You can also configure the default `database`. However, it is *very important* to note that these things get set the **FIRST TIME YOU START** the service and **ONLY THE FIRST TIME.**
 
@@ -90,7 +90,7 @@ Also note that by default, all `postgres` services have a passwordless `postgres
 
 ## Using a custom postgres config file
 
-You may need to override our [default postgres config](https://github.com/lando/lando/tree/master/plugins/lando-services/services/postgres) with your own [custom postgres config](https://github.com/postgres/postgres/blob/master/src/backend/utils/misc/postgresql.conf.sample).
+You may need to override our [default postgres config](https://github.com/lando/postgres/tree/main/services/postgres) with your own [custom postgres config](https://github.com/postgres/postgres/blob/master/src/backend/utils/misc/postgresql.conf.sample).
 
 If you do this, you must use a file that exists inside your application and express it relative to your project root as shown below:
 
