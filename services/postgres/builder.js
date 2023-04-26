@@ -10,8 +10,9 @@ module.exports = {
   name: 'postgres',
   config: {
     version: '10',
-    supported: ['14', '13', '12', '11', '11.1', '11.0', '10', '10.6.0', '9.6'],
+    supported: ['15', '14', '13', '12', '11', '11.1', '11.0', '10', '10.6.0', '9.6'],
     pinPairs: {
+      '15': 'bitnami/postgresql:15.2.0-debian-11-r26',
       '14': 'bitnami/postgresql:14.1.0-debian-10-r9',
       '13': 'bitnami/postgresql:13.5.0-debian-10-r9',
       '12': 'bitnami/postgresql:12.9.0-debian-10-r9',
