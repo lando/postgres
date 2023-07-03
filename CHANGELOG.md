@@ -1,3 +1,8 @@
+## v0.9.0 - [July 3, 2023](https://github.com/lando/postgres/releases/tag/v0.9.0)
+  * Removed bundle-dependencies and version-bump-prompt from plugin.
+  * Updated package to use prepare-release-action.
+  * Updated documentation to reflect new release process.
+
 ## v0.8.0 - [April 26, 2023](https://github.com/lando/postgres/releases/tag/v0.8.0)
 
 * Added support for Postgres 15.
