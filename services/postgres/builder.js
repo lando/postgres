@@ -61,6 +61,9 @@ module.exports = {
           `${options.data}:/bitnami/postgresql`,
         ],
       };
+
+      options.healthcheck =
+        `psql --host=${options.name} --username=${options.creds.user} --dbname=${options.creds.database} -c "\\\l"`;
       // Send it downstream
       super(id, options, {services: _.set({}, options.name, postgres)});
     };
