@@ -2,6 +2,7 @@
 
 // Modules
 const _ = require('lodash');
+const path = require('path');
 
 /*
  * Apache for all
@@ -21,11 +22,10 @@ module.exports = {
       '9.6': 'bitnami/postgresql:9.6.24-debian-10-r9',
     },
     patchesSupported: true,
-    confSrc: __dirname,
+    confSrc: path.resolve(__dirname, '..', 'config'),
     creds: {
       database: 'database',
     },
-    healthcheck: 'psql -U postgres -c "\\\l"',
     port: '5432',
     defaultFiles: {
       database: 'postgresql.conf',
@@ -46,6 +46,8 @@ module.exports = {
       // because this messes things up on circle ci and presumably elsewhere and _should_ be unncessary
       if (_.get(options, '_app._config.uid', '1000') !== '1001') options._app.nonRoot.push(options.name);
 
+      if (!options.healthcheck) options.healthcheck = require('../utils/get-default-healthcheck')(options);
+
       const postgres = {
         image: `bitnami/postgresql:${options.version}`,
         command: '/launch.sh',
@@ -62,8 +64,6 @@ module.exports = {
         ],
       };
 
-      options.healthcheck =
-        `psql --host=${options.name} --username=${options.creds.user} --dbname=${options.creds.database} -c "\\\l"`;
       // Send it downstream
       super(id, options, {services: _.set({}, options.name, postgres)});
     };
