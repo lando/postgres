@@ -8,5 +8,5 @@ module.exports = options => {
     `--username=${options.creds.user}`,
     `--dbname=${options.creds.database}`,
     '-c "\\\l"',
-  ];
+  ].join(' ');
 };
