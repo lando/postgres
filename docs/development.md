@@ -5,7 +5,7 @@ description: Learn how to develop and contribute to the Lando Postgres service
 
 # Development
 
-This guide contains information to help onboard developers to work on the [postgres](https://postgres.microsoft.com/en-us/) integration, hereafter referred to as *the plugin*.
+This guide contains information to help onboard developers to work on the [postgres](https://www.postgresql.org/) integration, hereafter referred to as *the plugin*.
 
 ## Requirements
 
