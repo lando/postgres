@@ -26,6 +26,6 @@ jobs:
 
       # Run tests
       - name: Run linter
-        run: yarn lint
+        run: npm run lint
       - name: Test build
-        run: yarn docs:build
+        run: npm run docs:build
