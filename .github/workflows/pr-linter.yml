@@ -26,4 +26,4 @@ jobs:
 
       # Run the linter
       - name: Run code linter
-        run: npm lint
+        run: npm run lint
