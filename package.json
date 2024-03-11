@@ -1,7 +1,7 @@
 {
   "name": "@lando/postgres",
   "description": "A Lando plugin that provides a tight integration with Postgres.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Mike Pirog @pirog",
   "license": "GPL-3.0",
   "repository": "lando/postgres",
@@ -59,9 +59,7 @@
     "vitepress": "^1.0.0-rc.42"
   },
   "bundledDependencies": [
-    "lodash"
-  ],
-  "bundleDependencies": [
+    "@lando/postgres",
     "lodash"
   ]
 }
