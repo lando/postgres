@@ -8,7 +8,7 @@ module.exports = options => {
   ];
 
   // Only include whatever creds are available.
-  options.creds.user ? healthcheck.push(`--user=${options.creds.user}`) : false;
+  options.creds.user ? healthcheck.push(`--username=${options.creds.user}`) : false;
   options.creds.database ? healthcheck.push(`--dbname=${options.creds.database}`) : false;
 
   return healthcheck.concat([
