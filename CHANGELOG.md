@@ -1,6 +1,10 @@
-## v1.1.1 - [March 11, 2024](https://github.com/lando/postgres/releases/tag/v1.1.1)
+## v1.2.1 - [March 11, 2024](https://github.com/lando/postgres/releases/tag/v1.2.1)
 
 * Corrected the healthcheck for postgres username option.
+
+## v1.2.0 - [March 11, 2024](https://github.com/lando/postgres/releases/tag/v1.2.0)
+
+* Updated database plugins to the latest version.
 
 ## v1.1.0 - [March 8, 2024](https://github.com/lando/postgres/releases/tag/v1.1.0)
 
