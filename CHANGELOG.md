@@ -1,3 +1,7 @@
+## v1.3.0 - [March 19, 2024](https://github.com/lando/postgres/releases/tag/v1.3.0)
+
+* Added compatibility for Postgres 16 [#38](https://github.com/lando/postgres/pull/38)
+
 ## v1.2.1 - [March 11, 2024](https://github.com/lando/postgres/releases/tag/v1.2.1)
 
 * Corrected the healthcheck for postgres username option.
