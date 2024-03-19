@@ -18,6 +18,8 @@ services:
 
 ## Supported versions
 
+*   [16](https://hub.docker.com/r/bitnami/postgresql)
+*   [15](https://hub.docker.com/r/bitnami/postgresql)
 *   [14](https://hub.docker.com/r/bitnami/postgresql)
 *   [13](https://hub.docker.com/r/bitnami/postgresql)
 *   [12](https://hub.docker.com/r/bitnami/postgresql)
