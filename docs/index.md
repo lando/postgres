@@ -8,7 +8,7 @@ next: ./config.html
 
 [PostgreSQL](https://www.postgresql.org/) is an advanced open source database server.
 
-You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/lando-service.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
+You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/services/lando.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
 
 ```yaml
 services:
@@ -28,7 +28,7 @@ services:
 *   **[10](https://hub.docker.com/r/bitnami/postgresql)** **(default)**
 *   [10.6.0](https://hub.docker.com/r/bitnami/postgresql)
 *   [9.6](https://hub.docker.com/r/bitnami/postgresql)
-*   [custom](https://docs.lando.dev/core/v3/lando-service.html#overrides)
+*   [custom](https://docs.lando.dev/core/v3/services/lando.html#overrides)
 
 ## Patch versions
 
