@@ -1,4 +1,4 @@
-PostgreSQL Custom Example
+# PostgreSQL Custom Example
 
 This example exists primarily to test the following documentation:
 
