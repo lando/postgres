@@ -1,12 +1,10 @@
-Postgres Example
-================
+# PostgreSQL 9.6 Example
 
 This example exists primarily to test the following documentation:
 
 * [Postgres Service](https://docs.devwithlando.io/tutorials/postgres.html)
 
-Start up tests
---------------
+## Start up tests
 
 Run the following commands to get up and running with this example.
 
@@ -16,17 +14,16 @@ lando poweroff
 lando start
 ```
 
-Verification commands
----------------------
+## Verification commands
 
 Run the following commands to validate things are rolling as they should.
 
 ```bash
 # Should use 9 as the specified version
-lando ssh -s defaults -c "psql -V" | grep "9"
+lando exec defaults -- "psql -V" | grep "9"
 
 # Should use patch version when set by the user
-lando ssh -s patch -c "psql -V" | grep "9.6.14"
+lando exec patch -- "psql -V" | grep "9.6.14"
 
 # Should see the default database on healthcheck
 lando healthcheckdefaults | grep 'database'
@@ -38,8 +35,7 @@ lando verifydefaultsdatabase | grep 'pg_database'
 lando crossconnect | grep 'pg_database'
 ```
 
-Destroy tests
--------------
+## Destroy tests
 
 Run the following commands to trash this app like nothing ever happened.
 

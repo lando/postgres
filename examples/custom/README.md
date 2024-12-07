@@ -1,12 +1,10 @@
-Postgres Example
-================
+# PostgreSQL Custom Example
 
 This example exists primarily to test the following documentation:
 
 * [Postgres Service](https://docs.devwithlando.io/tutorials/postgres.html)
 
-Start up tests
---------------
+## Start up tests
 
 Run the following commands to get up and running with this example.
 
@@ -16,14 +14,13 @@ lando poweroff
 lando start
 ```
 
-Verification commands
----------------------
+## Verification commands
 
 Run the following commands to validate things are rolling as they should.
 
 ```bash
 # Should use the specfied version when set by the user
-lando ssh -s custom -c "psql -V" | grep "11."
+lando exec custom -- psql -V | grep "11."
 
 # Should use the correct custom user pass db
 lando verifycustom | grep 'pg_database'
@@ -41,8 +38,7 @@ lando info -s mimicarecipe | grep user | grep postgres
 lando info -s mimicarecipe | grep 'mimic'
 ```
 
-Destroy tests
--------------
+## Destroy tests
 
 Run the following commands to trash this app like nothing ever happened.
 

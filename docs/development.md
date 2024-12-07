@@ -1,6 +1,6 @@
 ---
 title: Development
-description: Learn how to develop and contribute to the Lando Postgres service
+description: Learn how to develop and contribute to the Lando PostgreSQL service
 ---
 
 # Development
