@@ -20,7 +20,7 @@ Run the following commands to validate things are rolling as they should.
 
 ```bash
 # Should use the specfied version when set by the user
-lando exec -- custom -- psql -V | grep "11."
+lando exec defaults custom -- psql -V | grep "11."
 
 # Should use the correct custom user pass db
 lando verifycustom | grep 'pg_database'

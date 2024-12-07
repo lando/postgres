@@ -20,7 +20,7 @@ Run the following commands to validate things are rolling as they should.
 
 ```bash
 # Should use 10 as the specified version
-lando exec -- defaults -- psql -V | grep "10"
+lando exec defaults -- psql -V | grep "10"
 
 # Should see the default database on healthcheck
 lando healthcheckdefaults | grep 'database'

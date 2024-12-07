@@ -28,7 +28,7 @@ services:
 *   **[10](https://hub.docker.com/r/bitnami/postgresql)** **(default)**
 *   [10.6.0](https://hub.docker.com/r/bitnami/postgresql)
 *   [9.6](https://hub.docker.com/r/bitnami/postgresql)
-*   [custom](https://docs.lando.dev/core/v3/services/lando.html#overrides)
+*   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
 
 ## Patch versions
 
