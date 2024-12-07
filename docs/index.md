@@ -1,14 +1,14 @@
 ---
-title: Postgres Lando Plugin
+title: PostgreSQL Lando Plugin
 description: Add a highly configurable Postgres service to Lando for local development with all the power of Docker and Docker Compose.
 next: ./config.html
 ---
 
-# Postgres
+# PostgreSQL
 
 [PostgreSQL](https://www.postgresql.org/) is an advanced open source database server.
 
-You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/services/lando.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
+You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/services/lando-3.html) top-level config in your [Landofile](https://docs.lando.dev/landofile/).
 
 ```yaml
 services:

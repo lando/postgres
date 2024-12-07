@@ -1,6 +1,6 @@
 ---
 title: Contact Us
-description: Get help and support for the Lando Postgres Plugin
+description: Get help and support for the Lando PostgreSQL Plugin
 ---
 
 # Contact Us

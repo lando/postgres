@@ -12,6 +12,6 @@ module.exports = options => {
   options.creds.database ? healthcheck.push(`--dbname=${options.creds.database}`) : false;
 
   return healthcheck.concat([
-    '-c "\\\l"',
+    '-c "\\l"',
   ]).join(' ');
 };
