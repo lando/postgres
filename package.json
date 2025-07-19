@@ -3,7 +3,7 @@
   "description": "A Lando plugin that provides a tight integration with Postgres.",
   "version": "1.4.4",
   "author": "Mike Pirog @pirog",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "repository": "lando/postgres",
   "bugs": "https://github.com/lando/postgres/issues/new/choose",
   "homepage": "https://github.com/lando/postgres",
