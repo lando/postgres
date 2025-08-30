@@ -1,5 +1,9 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+## v1.5.0 - [August 29, 2025](https://github.com/lando/postgres/releases/tag/v1.5.0)
+
+* Migrate package to use the Bitnamilegacy repository
+
 ## v1.4.4 - [December 7, 2024](https://github.com/lando/postgres/releases/tag/v1.4.4)
 
 * Optimized for `midcore`
