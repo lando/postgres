@@ -13,14 +13,14 @@ module.exports = {
     version: '10',
     supported: ['16', '15', '14', '13', '12', '11', '11.1', '11.0', '10', '10.6.0', '9.6'],
     pinPairs: {
-      '16': 'bitnami/postgresql:16.2.0-debian-12-r8',
-      '15': 'bitnami/postgresql:15.2.0-debian-11-r26',
-      '14': 'bitnami/postgresql:14.1.0-debian-10-r9',
-      '13': 'bitnami/postgresql:13.5.0-debian-10-r9',
-      '12': 'bitnami/postgresql:12.9.0-debian-10-r9',
-      '11': 'bitnami/postgresql:11.14.0-debian-10-r9',
-      '10': 'bitnami/postgresql:10.19.0-debian-10-r9',
-      '9.6': 'bitnami/postgresql:9.6.24-debian-10-r9',
+      '16': 'bitnamilegacy/postgresql:16.6.0-debian-12-r2',
+      '15': 'bitnamilegacy/postgresql:15.10.0-debian-12-r2',
+      '14': 'bitnamilegacy/postgresql:14.18.0-debian-12-r0',
+      '13': 'bitnamilegacy/postgresql:13.18.0-debian-12-r2',
+      '12': 'bitnamilegacy/postgresql:12.20.0-debian-12-r26',
+      '11': 'bitnamilegacy/postgresql:11.22.0-debian-11-r4',
+      '10': 'bitnamilegacy/postgresql:10.23.0-debian-11-r3',
+      '9.6': 'bitnamilegacy/postgresql:9.6.24',
     },
     patchesSupported: true,
     confSrc: path.resolve(__dirname, '..', 'config'),
@@ -50,7 +50,7 @@ module.exports = {
       if (!options.healthcheck) options.healthcheck = require('../utils/get-default-healthcheck')(options);
 
       const postgres = {
-        image: `bitnami/postgresql:${options.version}`,
+        image: `bitnamilegacy/postgresql:${options.version}`,
         command: '/launch.sh',
         environment: {
           ALLOW_EMPTY_PASSWORD: 'yes',
