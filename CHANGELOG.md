@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Added support for Postgres 17
+
 ## v1.5.0 - [September 1, 2025](https://github.com/lando/postgres/releases/tag/v1.5.0)
 
 * Switched images to [bitnamilegacy](https://github.com/bitnami/containers/issues/83267) namespace
