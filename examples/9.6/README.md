@@ -2,7 +2,7 @@
 
 This example exists primarily to test the following documentation:
 
-* [Postgres Service](https://docs.devwithlando.io/tutorials/postgres.html)
+* [Postgres Service](https://docs.lando.dev/plugins/postgres)
 
 ## Start up tests
 
