@@ -1,8 +1,13 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
-## v1.5.0 - [August 29, 2025](https://github.com/lando/postgres/releases/tag/v1.5.0)
-
-* Migrate package to use the Bitnamilegacy repository
+* Switched images to [bitnamilegacy](https://github.com/bitnami/containers/issues/83267) namespace
+* Updated `postgres:16` to `16.6.0`
+* Updated `postgres:15` to `15.10.0`
+* Updated `postgres:14` to `14.18.0`
+* Updated `postgres:13` to `13.18.0`
+* Updated `postgres:12` to `12.20.0`
+* Updated `postgres:11` to `11.22.0`
+* Updated `postgres:10` to `10.23.0`
 
 ## v1.4.4 - [December 7, 2024](https://github.com/lando/postgres/releases/tag/v1.4.4)
 

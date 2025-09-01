@@ -27,7 +27,7 @@ To upgrade the PostgreSQL major version you need to:
 ```yaml
 services:
   myservice:
-    type: postgres:14
+    type: postgres:16
     portforward: false
     creds:
       database: database
@@ -53,7 +53,7 @@ services:
 ```yaml
 services:
   myservice:
-    type: postgres
+    type: postgres:16
     portforward: true
 ```
 
@@ -62,7 +62,7 @@ services:
 ```yaml
 services:
   myservice:
-    type: postgres
+    type: postgres:16
     portforward: 5432
 ```
 
@@ -110,7 +110,7 @@ Note that you can put your configuration files anywhere inside your application 
 ```yaml
 services:
   myservice:
-    type: postgres
+    type: postgres:16
     config:
       database: config/my-custom.conf
 ```
