@@ -1,0 +1,22 @@
+name: lando-postgres-17
+services:
+  defaults:
+    type: postgres:17
+  cross:
+    type: postgres:17
+    portforward: true
+tooling:
+  healthcheckdefaults:
+    service: defaults
+    cmd: psql -U postgres -c "\\l"
+  verifydefaultsdatabase:
+    service: defaults
+    cmd: psql -P pager=off -U postgres -c "\dt *.*"
+  crossconnect:
+    service: defaults
+    cmd: psql -P pager=off -h cross -U postgres -c "\dt *.*"
+
+# This is important because it lets lando know to test against the plugin in this repo
+# DO NOT REMOVE THIS!
+plugins:
+  "@lando/postgres": ../..

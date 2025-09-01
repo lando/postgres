@@ -13,11 +13,12 @@ You can easily add it to your Lando app by adding an entry to the [services](htt
 ```yaml
 services:
   myservice:
-    type: postgres:16
+    type: postgres:17
 ```
 
 ## Supported versions
 
+*   [17](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=17.)
 *   [16](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=16.)
 *   [15](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=15.)
 *   [14](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=14.)
@@ -45,4 +46,3 @@ services:
 ```
 
 But make sure you use one of the available [patch tags](https://hub.docker.com/r/bitnamilegacy/postgresql/tags) for the underlying image we are using.
-

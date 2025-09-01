@@ -26,6 +26,7 @@ jobs:
           - examples/14
           - examples/15
           - examples/16
+          - examples/17
           - examples/custom
     steps:
 
