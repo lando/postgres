@@ -18,16 +18,16 @@ services:
 
 ## Supported versions
 
-*   [16](https://hub.docker.com/r/bitnami/postgresql)
-*   [15](https://hub.docker.com/r/bitnami/postgresql)
-*   [14](https://hub.docker.com/r/bitnami/postgresql)
-*   [13](https://hub.docker.com/r/bitnami/postgresql)
-*   [12](https://hub.docker.com/r/bitnami/postgresql)
-*   [11](https://hub.docker.com/r/bitnami/postgresql)
-*   [11.1.0](https://hub.docker.com/r/bitnami/postgresql)
-*   **[10](https://hub.docker.com/r/bitnami/postgresql)** **(default)**
-*   [10.6.0](https://hub.docker.com/r/bitnami/postgresql)
-*   [9.6](https://hub.docker.com/r/bitnami/postgresql)
+*   [16](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=16.)
+*   [15](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=15.)
+*   [14](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=14.)
+*   [13](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=13.)
+*   [12](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=12.)
+*   [11](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=11.)
+*   [11.1.0](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=11.1.)
+*   **[10](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=10.)** **(default)**
+*   [10.6.0](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=10.6.)
+*   [9.6](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=9.6)
 *   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
 
 ## Patch versions
@@ -44,5 +44,5 @@ services:
     type: postgres:9.6.11
 ```
 
-But make sure you use one of the available [patch tags](https://hub.docker.com/r/bitnami/postgresql/tags) for the underlying image we are using.
+But make sure you use one of the available [patch tags](https://hub.docker.com/r/bitnamilegacy/postgresql/tags) for the underlying image we are using.
 
