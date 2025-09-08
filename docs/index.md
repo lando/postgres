@@ -1,7 +1,6 @@
 ---
 title: PostgreSQL Lando Plugin
 description: Add a highly configurable Postgres service to Lando for local development with all the power of Docker and Docker Compose.
-next: ./config.html
 ---
 
 # PostgreSQL
@@ -23,13 +22,22 @@ services:
 *   [15](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=15.)
 *   [14](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=14.)
 *   [13](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=13.)
+*   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
+
+## Unsupported versions
+
+::: warning Using Unsupported PostgreSQL Versions!
+While you can currently use some [unsupported PostgreSQL versions](https://endoflife.date/postgresql) with Lando, it's worth noting that we also do not support such versions, so your mileage may vary. If you are having issues with unsupported versions and open a ticket about it, the most likely response you will get is "upgrade to a supported version".
+:::
+
+You can still run these versions with Lando but for all intents and purposes they should be considered unsupported.
+
 *   [12](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=12.)
 *   [11](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=11.)
 *   [11.1.0](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=11.1.)
 *   [10](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=10.)
 *   [10.6.0](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=10.6.)
 *   [9.6](https://hub.docker.com/r/bitnamilegacy/postgresql/tags?name=9.6)
-*   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
 
 ## Patch versions
 
