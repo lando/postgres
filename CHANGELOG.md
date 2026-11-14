@@ -1,5 +1,8 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Updated bundled runtime lodash from 4.17.21 to 4.17.23; the declared dependency range remains `^4.17.21`.
+* Added npm `edge`-to-`latest` promotion when a prerelease becomes stable, with a wait for package availability.
+
 ## v1.6.0 - [September 8, 2025](https://github.com/lando/postgres/releases/tag/v1.6.0)
 
 * Added support for Postgres 17
